@@ -13,7 +13,7 @@ def main():
     ratio_water_tl = 3.5
     ratio_water = new_water/water
     ratio_chicken_water = new_water/chicken
-    huangmenji_chicken = input("输入鸡肉的克数: ")
+    huangmenji_chicken = input("输入🍗的克数: ")
     huangmenji_water = ratio_chicken_water* int(huangmenji_chicken)
     huangmenji_original_water = huangmenji_water / ratio_water
     huangmenji_tl = huangmenji_original_water/ ratio_water_tl
@@ -39,11 +39,11 @@ def main():
     tiaoliaoshui = tl_new1 + shui
 
  
-    print('蚝油汁: '+str(hy_new) +('g'))
+    print('蚝油: '+str(hy_new) +('g'))
     print('海鲜酱: ' +str(hxj_new) +('g'))
     print('味极鲜: ' +str(wjx_new) +('g'))
-    print('草菇老抽: ' +str(crlk_new) +('g'))
-    print('鲍鱼汁: ' +str(byz_new) + ('g'))
+    print('🍄老抽: ' +str(crlk_new) +('g'))
+    print('鲍🐟汁: ' +str(byz_new) + ('g'))
     print('调料一共放了: ' +str(tl_new1) + ('g'))
     print('需要加入水: '+str(shui) +('g'))
     print('调料水一共: '+str(tiaoliaoshui) +('g'))
