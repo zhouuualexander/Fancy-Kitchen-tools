@@ -37,14 +37,16 @@ def main():
     tl_new1 = (hy_new + hxj_new+wjx_new +crlk_new+byz_new)
     shui = tl_new1*3.5
     tiaoliaoshui = tl_new1 + shui
-
- 
+    ratio_ginger = 2000/60
+    ginger = int(huangmenji_chicken) / ratio_ginger
     print('蚝油: '+str(hy_new) +('g'))
     print('海鲜酱: ' +str(hxj_new) +('g'))
     print('味极鲜: ' +str(wjx_new) +('g'))
     print('🍄老抽: ' +str(crlk_new) +('g'))
     print('鲍🐟汁: ' +str(byz_new) + ('g'))
+    print('姜: ' +str(ginger) +('g'))
     print('调料一共放了: ' +str(tl_new1) + ('g'))
     print('需要加入水: '+str(shui) +('g'))
     print('调料水一共: '+str(tiaoliaoshui) +('g'))
+    
 main()
