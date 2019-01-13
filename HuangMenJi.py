@@ -27,10 +27,24 @@ def main():
     huangmenji_wjx = huangmenji_tl * ratio_wjx
     huangmenji_crlk = huangmenji_tl * ratio_crlk
     huangmenji_byz = huangmenji_tl* ratio_byz
+    
+    tl_new = huangmenji_water/4.5
+    hy_new = tl_new* ratio_hy
+    hxj_new = tl_new* ratio_hxj
+    wjx_new = tl_new* ratio_wjx
+    crlk_new = tl_new* ratio_crlk
+    byz_new = tl_new* ratio_byz
+    tl_new1 = (hy_new + hxj_new+wjx_new +crlk_new+byz_new)
+    shui = tl_new1*3.5
+    tiaoliaoshui = tl_new1 + shui
 
-    print('蚝油: ' +str(huangmenji_hy) +'g')
-    print('海鲜酱: ' + str(huangmenji_hxj)+('g'))
-    print('味极鲜: ' + str(huangmenji_wjx)+('g'))
-    print('草茹老抽: ' +str(huangmenji_crlk)+('g'))
-    print('鲍鱼汁: ' +str(huangmenji_byz)+('g'))
+ 
+    print('蚝油汁: '+str(hy_new) +('g'))
+    print('海鲜酱: ' +str(hxj_new) +('g'))
+    print('味极鲜: ' +str(wjx_new) +('g'))
+    print('草菇老抽: ' +str(crlk_new) +('g'))
+    print('鲍鱼汁: ' +str(byz_new) + ('g'))
+    print('调料一共放了: ' +str(tl_new1) + ('g'))
+    print('需要加入水: '+str(shui) +('g'))
+    print('调料水一共: '+str(tiaoliaoshui) +('g'))
 main()
