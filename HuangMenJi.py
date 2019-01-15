@@ -27,7 +27,6 @@ def main():
     huangmenji_wjx = huangmenji_tl * ratio_wjx
     huangmenji_crlk = huangmenji_tl * ratio_crlk
     huangmenji_byz = huangmenji_tl* ratio_byz
-    
     tl_new = huangmenji_water/4.5
     hy_new = tl_new* ratio_hy
     hxj_new = tl_new* ratio_hxj
@@ -39,14 +38,8 @@ def main():
     tiaoliaoshui = tl_new1 + shui
     ratio_ginger = 2000/60
     ginger = int(huangmenji_chicken) / ratio_ginger
-    print('蚝油: '+str(hy_new) +('g'))
-    print('海鲜酱: ' +str(hxj_new) +('g'))
-    print('味极鲜: ' +str(wjx_new) +('g'))
-    print('🍄老抽: ' +str(crlk_new) +('g'))
-    print('鲍🐟汁: ' +str(byz_new) + ('g'))
-    print('姜: ' +str(ginger) +('g'))
-    print('调料一共放了: ' +str(tl_new1) + ('g'))
-    print('需要加入水: '+str(shui) +('g'))
-    print('调料水一共: '+str(tiaoliaoshui) +('g'))
+    dic = {hy_new:'蚝油: ',hxj_new:'海鲜酱: ',wjx_new:'味极鲜: ',crlk_new:'🍄老抽: ',byz_new:'鲍🐟汁: ',ginger:'姜: ',tl_new1:'调料一共放了: ',tiaoliaoshui:'调料水一共: '}
+    for key, value in dic.items():
+        print(value,str(int(key))+'g')
     
 main()
